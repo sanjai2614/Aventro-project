@@ -39,8 +39,8 @@ nav {
 }
 
 .header {
-    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(https://bootstrapmade.com/content/demo/Aventro/assets/img/bg/bg-12.webp);
-    /* opacity: 0.3; */
+    background:linear-gradient(rgba(9,17,33,0.8),rgba(9,17,33,0.8)), url(https://bootstrapmade.com/content/demo/Aventro/assets/img/bg/bg-12.webp) ;
+    background-size: contain;
     height: auto;
     color: white;
 }
@@ -189,6 +189,9 @@ ul {
     border: 1px solid #4e5660;
     border-radius: 20px;
 
+}
+.sidebox i{
+    font-size: x-large;
 }
 
 .informations {
@@ -647,7 +650,6 @@ hr{
    justify-content: space-between;
    padding: 20px 100px;
    width: 100%;
-   /* gap: 20px; */
 }
 .start, .enter{
     border: 1px solid #262f3d;
@@ -848,8 +850,9 @@ hr{
     border-radius: 10px;
     width: 280px;
     height: 500px;
+         transition:all 0.3s ;
+
     &:hover{
-         transition:ease-in-out 0.6s ;
          transform: scale(1) translateY(-10px);
                  background-color: #151d2d;
     }
@@ -1049,11 +1052,11 @@ form button >p{
     background-color: #262f3d;
     padding: 10px;
     height: 40px;
+        transition: 0.3s;
     border-radius:10px ;
     &:hover{
         background-color: #2180be;
         border: none;
-        transition: 0.3s;
         transform: scale(1) translateY(-3px);
         cursor: pointer;
     }
@@ -1061,7 +1064,6 @@ form button >p{
         color: #091121;
     }
 }
-
 
 footer{
     padding: 50px 100px;
@@ -1095,9 +1097,12 @@ footer{
     flex-direction: column;
     gap: 20px;
 }
+.ft-icons i{
+    transition: all 0.3s ;
+
+}
 .ft-icons i:hover{
     cursor: pointer;
-    transition: all 0.3s ;
       transform: scale(1) translateY(-3px);
 }
 .ft-2{
