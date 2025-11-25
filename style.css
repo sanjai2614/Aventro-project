@@ -28,6 +28,7 @@ nav {
     position: relative;
     color: #ecedee;
     position: fixed;
+    top:0;
     z-index: 100;
     background-color: rgba(9, 17, 33,0.8);
     &:hover{
@@ -39,8 +40,8 @@ nav {
 }
 
 .header {
-    background:linear-gradient(rgba(9,17,33,0.8),rgba(9,17,33,0.8)), url(https://bootstrapmade.com/content/demo/Aventro/assets/img/bg/bg-12.webp) ;
-    background-size: contain;
+    background:linear-gradient(rgba(9,17,33,0.8),rgba(9,17,33,0.8)), url(https://bootstrapmade.com/content/demo/Aventro/assets/img/bg/bg-12.webp) no-repeat center ;
+    background-size: cover;
     height: auto;
     color: white;
 }
@@ -163,16 +164,23 @@ ul {
 }
 
 .sidebox {
+    align-self: center;
     width: 45%;
     height: 350px;
     display: flex;
     align-items: flex-end;
     flex-wrap: wrap;
     justify-content: space-around;
-    position: absolute;
+    /* position: absolute; */
     z-index: 1;
     right: 5%;
-    top: 35%;
+    top: 15%;
+}
+@media (max-width:1288px){
+       .sidebox{
+            position: absolute;
+            height: 100%;
+       }
 }
 
 .sidebox div {
@@ -284,13 +292,15 @@ ul {
     gap: 20px;
 }
 .belowservices{
-    height: 900px;
+    height: auto;
     padding: 100px;
     display: flex;
     flex-direction: row;
     gap: 3%;
     flex-wrap: wrap;
-    align-content: space-around;
+    justify-content: space-around;
+    align-content: space-evenly;
+    row-gap: 30px   ;
 }
 .belowservices div{
     padding: 30px;
@@ -535,7 +545,7 @@ hr{
     text-align: left;
 }
 .request{
-    /* height: 600px; */
+    height: auto;
     width: 100%;
     margin: 100px 100px 100px 50px;
     padding: 30px;
@@ -546,16 +556,18 @@ hr{
     border-radius: 10px;
 }
 .fourpoints{
-    height: 200px;
+    height: auto;
+    
     display: flex;
     flex-wrap: wrap;
-    gap: 3px;
-    align-content: space-between;
+    gap: 5px;
+    align-content:center;
+
     
 }
-
 .enterprise{
     display: flex;
+    
     
 
 }
@@ -572,12 +584,21 @@ hr{
     gap: 5px;
     width: 240px;
 }
+@media (max-width:1317px){
+    .icons +div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: auto;
+}
+}
 .icons +div h1{
     font-size: 20px;
 }
 
 .req-last{
     display: flex;
+    height: auto;
     gap: 20px;
     align-items: center;
 }
@@ -850,7 +871,7 @@ hr{
     border-radius: 10px;
     width: 280px;
     height: 500px;
-         transition:all 0.3s ;
+         transition:all 0.3s linear;
 
     &:hover{
          transform: scale(1) translateY(-10px);
@@ -1052,7 +1073,7 @@ form button >p{
     background-color: #262f3d;
     padding: 10px;
     height: 40px;
-        transition: 0.3s;
+        transition: 0.3s all linear;
     border-radius:10px ;
     &:hover{
         background-color: #2180be;
@@ -1108,4 +1129,603 @@ footer{
 .ft-2{
     text-align: center;
     padding-top: 50px;
+}
+
+
+@media (min-width:1200px) and (max-width:1399px){
+    .sidebox {
+        align-self: center;
+    width: 45%;
+    height: auto;
+    gap: 20px;
+    display: flex;
+   align-items: center;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    z-index: 2;
+    top: 15%;
+    
+}
+}
+
+
+@media (min-width:992px) and (max-width:1199px){
+    nav{
+        padding:20px 50px ;
+    }
+    
+    .front1{
+        padding:100px 50px;
+    }
+    .after-team{
+        text-align: center;
+    width: fit-content;
+}
+    .sidebox {
+        align-self: center;
+    width: 45%;
+    height: auto;
+    gap: 20px;
+    display: flex;
+   align-items: center;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    z-index: 2;
+    top: 15%;
+    
+}
+.belowabout{
+    padding: 0px 50px;
+}
+.belowabout img{
+    height: 100%;
+}
+.asidetext{
+    gap: 20px;
+}
+.threediv, .belowservices, .elavate, .belowfourbox, footer{
+    padding: 50px;
+}
+.threediv div{
+    height: 100%;
+}
+.sidebars div{
+    height: 100%;
+}
+.innovation{
+    width: 70%;
+}
+.after-team{
+    align-self: center;
+}
+.after-team hr{
+    width: 100%;
+}
+.fourbox{
+    margin: 50px;
+}
+.partner{
+    padding-left: 50px;
+}
+.request{
+    margin-right: 50px;
+}
+.belowprice{
+    padding: 20px 50px;
+}
+.ques{
+    margin: 10px 100px 50px;
+}
+.team, .contact{
+    padding: 70px 50px;
+}
+.profiles{
+    align-content: space-evenly;
+    gap: 40px;
+
+}
+}
+
+
+@media (min-width:768px) and (max-width:991px){
+    nav{
+        padding:20px 50px ;
+    }
+    nav ul{
+        display: none;
+    }
+    .front1{
+        padding:100px 50px;
+    }
+    
+    .sidebox {
+        align-self: center;
+    width: 45%;
+    height: auto;
+    gap: 20px;
+    display: flex;
+   align-items: center;
+    flex-wrap: wrap;
+    z-index: 2;
+    top: 15%;
+    
+}
+.belowabout{
+    padding: 0px 50px;
+    flex-direction: column;
+    align-items: center;
+}
+.asidetext{
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.threediv, .belowservices, .elavate, .belowfourbox, footer{
+    padding: 50px;
+}
+.threediv{
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.threediv div{
+    width: 280px;
+    height: auto;
+}
+.sidebars div{
+    height: 100%;
+}
+.innovation{
+    width: 70%;
+}
+.after-team{
+    align-self: center;
+}
+.after-team hr{
+    width: 100%;
+}
+.fourbox{
+    margin: 50px;
+}
+.innovation{
+    width: 100%;
+}
+.innovation-img{
+    margin: 0;
+    width: 100%;
+    padding: 50px;
+}
+.belowfourbox{
+    flex-direction: column;
+
+}
+.tranform{
+    flex-direction: column;
+}
+
+.partner{
+    padding: 50px;
+    width: 100%;
+}
+.belowprice{
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.start, .profess, .enter{
+    width: 60%;
+}
+.request{
+    margin: 0px;
+    padding:50px ;
+}
+.belowprice{
+    padding: 20px 50px;
+}
+.profess>span{
+    position: absolute;
+    top: -14px;
+    left: 33%;
+    background-color: #2180be;
+    color: #ffffff;
+    padding: 5px 20px;
+    width: auto;
+    border-radius: 5px;
+}
+.after-team{
+    text-align: center;
+    width: fit-content;
+}
+.after-contact{
+    flex-direction: column;
+}
+.ques{
+    margin: 10px 100px 50px;
+}
+.team, .contact{
+    padding: 70px 50px;
+}
+
+.first-contact{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+
+}
+.second-contact{
+    width: 100%;
+}
+input, select{
+    width: 100%;
+}
+.profiles{
+    align-content: space-evenly;
+    gap: 40px;
+
+}
+.elavate{
+    flex-direction: column;
+    gap: 20px;
+}
+.elavate1{
+    width: 100%;
+}
+.sidebars{
+    padding: 0;
+}
+.ft-1{
+    justify-content: space-around;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+}
+
+@media (min-width:576px) and (max-width:767px){
+    nav{
+        padding:20px 50px ;
+    }
+    nav ul{
+        display: none;
+    }
+    .front1{
+        width: 100%;
+        padding:100px 50px;
+    }
+    
+    .sidebox {
+        align-self: center;
+    width: 45%;
+    height: auto;
+    gap: 20px;
+    display: flex;
+   align-items: center;
+    flex-wrap: wrap;
+    /* z-index: 2; */
+    top: 85%;
+    display: none;
+    
+}
+.belowabout{
+    padding: 0px 50px;
+    flex-direction: column;
+    align-items: center;
+}
+.asidetext{
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.threediv, .belowservices, .elavate, .belowfourbox, footer{
+    padding: 50px;
+}
+.threediv{
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.threediv div{
+    width: 280px;
+    height: auto;
+}
+.sidebars div{
+    height: 100%;
+}
+.innovation{
+    width: 70%;
+}
+.after-team{
+    align-self: center;
+}
+.after-team hr{
+    width: 100%;
+}
+.fourbox{
+    margin: 50px;
+    flex-wrap: wrap;
+}
+.subfour{
+    width: 200px;
+}
+.innovation{
+    width: 100%;
+}
+.innovation-img{
+    margin: 0;
+    width: 100%;
+    padding: 50px;
+}
+.belowfourbox{
+    flex-direction: column;
+
+}
+.tranform{
+    flex-direction: column;
+}
+
+.partner{
+    padding: 50px;
+    width: 100%;
+}
+.belowprice{
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.start, .profess, .enter{
+    width: 400px;
+}
+.request{
+    margin: 0px;
+    padding:50px ;
+}
+.belowprice{
+    padding: 20px 50px;
+}
+.profess>span{
+    position: absolute;
+    top: -14px;
+    left: 33%;
+    background-color: #2180be;
+    color: #ffffff;
+    padding: 5px 20px;
+    width: auto;
+    border-radius: 5px;
+}
+.after-team{
+    text-align: center;
+    width: fit-content;
+}
+.after-contact{
+    flex-direction: column;
+}
+.ques{
+    margin: 10px 100px 50px;
+}
+.team, .contact{
+    padding: 70px 50px;
+}
+
+.first-contact{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+
+}
+.second-contact{
+    width: 100%;
+}
+input, select{
+    width: 100%;
+}
+.profiles{
+    align-content: space-evenly;
+    gap: 40px;
+
+}
+.elavate{
+    flex-direction: column;
+    gap: 20px;
+}
+.elavate1{
+    width: 100%;
+}
+.sidebars{
+    padding: 0;
+}
+.ft-1{
+    justify-content: space-around;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+}
+
+
+@media (min-width:0px) and (max-width:575px){
+    nav{
+        padding:20px ;
+        width: 100vw;
+    }
+    nav ul{
+        display: none;
+    }
+    .front1{
+        width: 100%;
+        padding:100px 50px;
+    }
+    
+    .sidebox {
+        align-self: center;
+    width: 45%;
+    height: auto;
+    gap: 20px;
+    display: flex;
+   align-items: center;
+    flex-wrap: wrap;
+    /* z-index: 2; */
+    top: 85%;
+    display: none;
+    
+}
+.belowabout{
+    padding: 0px 50px;
+    flex-direction: column;
+    align-items: center;
+}
+.belowabout img{
+    width: 100%;
+    height: auto;
+}
+.services{
+    padding: 50px;
+}
+.asidetext{
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.threediv, .belowservices, .elavate, .belowfourbox, footer{
+    padding: 50px;
+}
+.threediv{
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.threediv div{
+    width: 280px;
+    height: auto;
+}
+.sidebars div{
+    height: 100%;
+}
+.innovation{
+    width: 70%;
+}
+.after-team{
+    align-self: center;
+}
+.after-team hr{
+    width: 100%;
+}
+.fourbox{
+    margin: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.before-ques{
+    padding: 50px;
+}
+.subfour{
+    width: 200px;
+}
+.innovation{
+    width: 100%;
+}
+.innovation-img{
+    margin: 0;
+    width: 100%;
+    padding: 50px;
+}
+.belowfourbox{
+    flex-direction: column;
+
+}
+.tranform{
+    flex-direction: column;
+}
+
+.partner{
+    padding: 50px;
+    width: 100%;
+}
+.belowprice{
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.start, .profess, .enter{
+    width: 400px;
+}
+.request{
+    margin: 0px;
+    padding:50px ;
+}
+.belowprice{
+    padding: 20px 50px;
+}
+.profess>span{
+    position: absolute;
+    top: -14px;
+    left: 33%;
+    background-color: #2180be;
+    color: #ffffff;
+    padding: 5px 20px;
+    width: auto;
+    border-radius: 5px;
+}
+.after-form{
+    flex-direction: column;
+}
+.after-team{
+    text-align: center;
+    width: fit-content;
+}
+.after-contact{
+    flex-direction: column;
+}
+.ques{
+    margin: 10px 100px 50px;
+}
+.team, .contact{
+    padding: 70px 50px;
+}
+
+.first-contact{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+
+}
+.second-contact{
+    width: 100%;
+}
+input, select{
+    width: 100%;
+}
+.profiles{
+    align-content: space-evenly;
+    gap: 40px;
+
+}
+.elavate{
+    flex-direction: column;
+    gap: 20px;
+}
+.elavate1{
+    width: 100%;
+}
+.sidebars{
+    padding: 0;
+}
+.ft-1{
+    justify-content: space-around;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}
 }
