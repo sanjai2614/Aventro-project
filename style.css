@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* color: #ecedee; */
 
 
     font-family: "Ubuntu Sans", sans-serif;
@@ -80,7 +79,6 @@ ul {
     padding: 20px;
     display: flex;
     gap: 15px;
-    /* border: #2180be 1px solid; */
     border-radius: 10px;
     z-index: 5;
 
@@ -104,7 +102,6 @@ ul {
     right: 160px;
     top: 50px;
     cursor: pointer;
-    /* border: #2180be 1px solid; */
     border-radius: 10px;
     z-index: 6;
 
@@ -178,7 +175,6 @@ ul {
     align-items: flex-end;
     flex-wrap: wrap;
     justify-content: space-around;
-    /* position: absolute; */
     z-index: 1;
     right: 5%;
     top: 15%;
@@ -255,7 +251,6 @@ ul {
     color: #ffffff;
     display: flex;
     flex-direction: column;
-    /* gap: 20px; */
     justify-content: space-evenly;
     font-size: 16px;
 
@@ -457,12 +452,12 @@ p {
 
 .subfour {
     padding: 20px;
-    /* background-color: #10192b; */
     width: 100%;
     gap: 20px;
 
 }
-.sub-innovation{
+
+.sub-innovation {
     padding: 20px;
     border-radius: 10px;
     background-color: #2180be;
@@ -1084,7 +1079,6 @@ hr {
     gap: 30px;
     background-color: #161e2e;
     padding: 30px;
-    /* box-shadow: 0 0 5px #9db1b5; */
 }
 
 .second-contact hr {
@@ -1282,6 +1276,7 @@ footer {
     padding-top: 50px;
 }
 
+/* For Device Supported Width: 1200px - 1399px */
 
 @media (min-width:1200px) and (max-width:1399px) {
     .sidebox {
@@ -1292,13 +1287,13 @@ footer {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        /* justify-content: space-around; */
         z-index: 2;
         top: 15%;
 
     }
 }
 
+/* For Device Supported Width: 992px - 1199px */
 
 @media (min-width:992px) and (max-width:1199px) {
     nav {
@@ -1322,7 +1317,6 @@ footer {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        /* justify-content: space-around; */
         z-index: 2;
         top: 15%;
 
@@ -1400,6 +1394,7 @@ footer {
     }
 }
 
+/* For Device Supported Width: 768px - 991px */
 
 @media (min-width:768px) and (max-width:991px) {
     nav {
@@ -1597,6 +1592,8 @@ footer {
     }
 }
 
+/* For Device Supported Width: 576px - 767px */
+
 @media (min-width:576px) and (max-width:767px) {
     nav {
         padding: 20px 50px;
@@ -1619,7 +1616,6 @@ footer {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        /* z-index: 2; */
         top: 85%;
         display: none;
 
@@ -1800,38 +1796,46 @@ footer {
     }
 }
 
+/* For Device Supported Width: 0px - 575px */
 
 @media (min-width:0px) and (max-width:575px) {
     nav {
         padding: 20px;
         width: 100vw;
     }
-    h1{
+
+    h1 {
         font-size: 25px;
     }
+
     .front1 h1 {
         font-size: 25px;
         text-align: center;
     }
 
-    .front1 h2{
+    .front1 h2 {
         text-align: center;
         align-self: center;
     }
-  .informations{
-    flex-wrap: wrap;
-  }
-  .partner{
-    width: 100%;
-    padding: 20px;
-    
-  }
-  .request{
-    padding: 20px;
-  }
-  .enterprise{
-    flex-wrap: wrap;
-  }
+
+    .informations {
+        flex-wrap: wrap;
+    }
+
+    .partner {
+        width: 100%;
+        padding: 20px;
+
+    }
+
+    .request {
+        padding: 20px;
+    }
+
+    .enterprise {
+        flex-wrap: wrap;
+    }
+
     nav ul {
         display: none;
     }
@@ -1849,7 +1853,6 @@ footer {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        /* z-index: 2; */
         top: 85%;
         display: none;
 
@@ -1889,9 +1892,11 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
     }
-    .req-last{
+
+    .req-last {
         flex-direction: column;
     }
+
     .threediv div {
         width: 280px;
         height: auto;
@@ -2000,9 +2005,10 @@ footer {
         margin: 50px;
     }
 
-    .team{
+    .team {
         padding: 20px;
     }
+
     .contact {
         padding: 70px 50px;
     }
@@ -2031,15 +2037,22 @@ footer {
         gap: 40px;
 
     }
-.profile{
-    width: 90%;
-}
-.qwer{
-    align-self: center;
-}
-.imgs1, .imgs2, .imgs3, .imgs4{
-    width: auto;
-}
+
+    .profile {
+        width: 90%;
+    }
+
+    .qwer {
+        align-self: center;
+    }
+
+    .imgs1,
+    .imgs2,
+    .imgs3,
+    .imgs4 {
+        width: auto;
+    }
+
     .elavate {
         flex-direction: column;
         gap: 20px;
