@@ -1299,7 +1299,9 @@ footer {
     nav {
         padding: 20px 50px;
     }
-
+    .front{
+        height: auto;
+    }
     .front1 {
         padding: 100px 50px;
     }
@@ -1318,8 +1320,11 @@ footer {
         align-items: center;
         flex-wrap: wrap;
         z-index: 2;
-        top: 15%;
+        top: 20%;
 
+    }
+    .sidebox div{
+        width: 220px;
     }
 
     .belowabout {
